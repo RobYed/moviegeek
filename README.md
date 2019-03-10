@@ -27,20 +27,18 @@ The following is expecting you to have python 3.x installed on your machine. I r
 ```bash
 > git clone https://github.com/practical-recommender-systems/moviegeek.git
 ```
-### Create a virtual environment for the project 
-Look at the following guide for more details [guide](http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref)
+### Install pipenv
+Look at the following docs for more details [pipenv](https://pipenv.readthedocs.io/en/latest/)
  
 ```bash
-> cd moviegeek
-> virtualenv -p python3 prs
-> source prs/bin/activate
+pip3 install pipenv
 ```
 
-if you are running Anaconda you can also use conda virtual environment instead.
-### Get the required packages
+### Get the required packages and start the env shell
 
 ```bash
-pip3 install -r requirements.txt
+pipenv install
+pipenv shell
 ```
 
 ### [OPTIONAL] install and use PostGreSQL
